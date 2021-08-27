@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*esto es para que cuando yo haga los calculos de los anchos de las alturas siempre considere dentro de lso calculos del ancho el paddin y el margin  que yo le assigne acordemonos que el margin es de mi etiqueta hacia afuera y el paddin de el espaciado de mi etiqueta hacia adentro osea lo el espacio dentro del contenedor*/
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%; /*ancho del 100 de la pagina*/
+    background:#174e63; /*color de fondo de la pagina*/
+
+}
+
+/*LOGO DE LA EMPRESA QUE ESTA ARRIBA DE LA BARAR DE NAVEGACION*/
+.content-img-logo{ /*es contenedor que contiene a la etiqueta img  DEL LOGO  dentro de el */
+    text-align: center; /*para alinear todos los textos y elementos*/
+    width: 100%; /*ancho del 100% del tamaño del contenedor*/
+    margin: 10px 0; /*margin 10px arriba y abajo y 0 a la izquierda y a la derecha esto lo hacemos para que el contenedor de la etiqueta img del logo no este muy pegado a los bordes de la pagina osea alla separaciones*/
+
+}
+
+.content-img-logo img{ /*ahora si estamos afectando directamente la imagen del logo */
+    width: 200px; /*el ancho de la imagen del logo es de 200px*/
+
+}
+/*FIN DEL LOGO QUE ESTA ARRIBA DE LA BARRA DE NAVEGACION*/
+
+/*BARRA DE NAVEGACION*/
+.menu-main-content{ /*ESTE ES EL CONTENEDOR QUE CONTIENE A LA A LA ETIQUETA NAV ES DECIR DENTRO DE EL ESTA LA ETIQUETA NAV*/
+    width: 100%; /*ANCHURA DEL 100% DEL TAMAÑO DEL CONTENEDOR EN PROPORCION A LA PAGINA*/
+    padding: 0 20px; /*poneos un paddin de 0 por arrib a y por abajo para qeu no tenga padddin por arriba y abajo  pero   20px por la izqueirda y la derecha  para que los elementos que esten dentro del contenedor no se toquen con los bordes del contenedor recordemos que el paddin es la distancia entre los elementos y los bordes del contenedor que contiene dichos elementos  */
+
+
+
+}
+
+.ul-menu{ /*es la etiqueta ul que esta dentro del nav*/
+    display: flex; /*para que todos los elementos que esten dentro de la etiqueta ul esten uno al lado del otro*/
+    justify-content: center; /*pone todos los elementos que esten drntro del ul en el centro de la pagina es decir todos los li */
+
+}
+
+.li-menu{ /*son las etiquetas li que estan dentro de la etiqueta ul del navbar*/
+    display: block; /*volvemos esto elemetos enves de in-line los vovlemos blokes y asi podemos darle caracteristicas diferenciadas a cada uno */
+
+
+}
+
+.li-menu a{
+    text-decoration: none; /*quita las rayas que estan abajo de los textos de los link*/
+}
+
+.item-nav-menu{ /*es el div que esta dentro de cada etiqueta a que asu vez estas etiquetas a estan dentro de las etiquetas li*/
+    margin: 0 20px; /*margin de 0 px para arriba y para abajo y 20px de izquierda y derecha esto es par que cada contenedor tenga un poco ams de distancia de separacion a los que  nos esta generando el justify-content center del ul-menu*/
+    padding: 10px 20px; /*ponemos paddin de 10px arriba abajo y 20px la izxquierda y a la derecha para que alla una separacion entre las letras osea el contenedo y los bordes del contenedor div para que todo no este tan pegado osea se geere una distancia*/
+    color: #fff; /*color de las letras*/
+    text-decoration: none;
+    
+
+
+
+}
+
+/*fin de la barra de navegacion */
+
+
+/*imagen principal de fondo de ceviche*/
+
+.content-image{ /*contenedor principal de la imagen de fondo de ceviche dentro de este div esta la etiqueta img*/
+    width: 100%; /*ancho del 100% del tamaño del proporcional a la pagina  es decir el contedor principal toma el 100% de mi pantalla */
+    max-width: 1200px; /*es el ancho maximo que le permitimos alcanzar ya que el tamaño le estamos diciendo al 100% del tamaño de la pantalla ps podra bariar el tamaño segun el tipo de pantalla*/
+    margin: 0 auto; /*le damos un margin 0 abajo y arriba y auto a la izquierda y la la derecha para que lo centre por la izquierda y la derecha pero el 0 es para que no lo mueva por abajo y arriba, NOTA  cuando ponemos auto lo que queremos decir es que vamos a poner lo mismo de aqui lo mismo de aqui es decir por en este caso particular la misma distancia por la isquierda que por la derecha por eso queda centrado */
+
+
+}
+
+.content-image img{
+    width: 100%; /* el div img toma el 100% del tamaño del contenedor div content-image*/
+
+}
+
+
+/* fin de la imagen principal de fondo de ceviche*/
+
+/*cabecera del menu de platos que esta debajo de la imagen del ceviche*/
+
+.main-page-content{ /*conenedor principal de la cabercera del menu de platos */
+    width: 100%; /*ancho del 100% del tamaño del proporcional a la pagina  es decir el contedor principal toma el 100% de mi pantalla */
+    max-width: 1200px; /*es el ancho maximo que le permitimos alcanzar ya que el tamaño le estamos diciendo al 100% del tamaño de la pantalla ps podra bariar el tamaño segun el tipo de pantalla*/
+    margin: 0 auto; /*le damos un margin 0 abajo y arriba y auto a la izquierda y la la derecha para que lo centre por la izquierda y la derecha pero el 0 es para que no lo mueva por abajo y arriba, NOTA  cuando ponemos auto lo que queremos decir es que vamos a poner lo mismo de aqui lo mismo de aqui es decir por en este caso particular la misma distancia por la isquierda que por la derecha por eso queda centrado */
+    margin-top: -100px; /*hacemos que la cabezera quede un un poco encima de la iamgen */
+
+}
+
+.offerts-content{ /*es el div que contiene a todos los  div item-offert*/
+    display: grid; /*grid es una propiedad de ordenamiento que te permite  dividir las secciones que vienen dentro de el en un determinado patrom o numero de posiciones*/
+    grid-template-columns: repeat(4,1fr); /*va en conjunto con el display grid y la estamos diciendo que ponga cada contenedo en una columna diferente y con ua distancia de un 1fr y claro la orden es repeat ya que le estmos diciendo que haga esa orden por cada uno de los elementos asi cada contenido queda dividido en una columna y con separacion de  1frame*/
+
+
+}
+
+.item-offert{ /*son todos los div item-offert que estan dentro de offert-content*/
+    padding: 30px;
+    text-align: left;
+    background: #1f8ab3;
+    border-top: 4px dashed #fff; /*genera un estilo de bordeado */
+    color: #fff; /*color de letras*/
+    font-size: 25px; /*tamaño de letra*/
+   
+}
+.item-offert span{ /*afectamos al primer span*/
+    font-weight: 700; /*anchura de la letra*/
+}
+
+.item-offert span span{ /*le estamos diciendo que afecte al segundo span que esta dentro del primer span */
+    font-size: 30px;
+    color: #174e63;
+}
+
+.item-offert p{ 
+    
+    font-size: 15px; /*tipo de letra de 15px para el segundo span de item-offert*/
+    
+
+
+}
+
+
+
+/* fin cabecera del menu de platos que esta debajo de la imagen del ceviche*/
